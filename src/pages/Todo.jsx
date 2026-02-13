@@ -31,7 +31,7 @@ function Todo(){
         if(!text) return;
 
         await axios.post(
-          "http://localhost:3001/todos",
+          "https://todo-back-end-cj6q.onrender.com/todos",
           {text,done:false}
         );
 
