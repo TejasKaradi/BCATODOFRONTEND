@@ -54,10 +54,13 @@ function Todo(){
         getTodos();
     }
 
-    const filtered = todos.filter(t =>
-        t.text.toLowerCase()
-        .includes(search.toLowerCase())
-    );
+    const filtered = todos
+  .filter(t => !t.done)   // 👈 hide completed
+  .filter(t =>
+    t.text.toLowerCase()
+    .includes(search.toLowerCase())
+  );
+
 
     // ✅ FIX — pending should be !done
     const pending = todos.filter(t=>!t.done).length;
