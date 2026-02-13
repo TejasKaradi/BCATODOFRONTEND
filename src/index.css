@@ -1,0 +1,7 @@
+*,*::before,*::after {box-sizing: border-box;}
+body{
+  margin: 0;
+  font-family: "DM Sans", "Segoe UI", system-ui, sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
